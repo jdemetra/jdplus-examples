@@ -1,0 +1,49 @@
+name: Java with Maven
+
+on: [ push, pull_request ]
+
+jobs:
+  build-and-test-job:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
+    strategy:
+      fail-fast: false
+      matrix:
+        java: [ 17 ]
+        os: [ ubuntu-latest, macOS-latest, windows-latest ]
+
+    name: JDK${{ matrix.java }} on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v3
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: ${{ matrix.java }}
+          cache: 'maven'
+
+      - name: Build jd3-main snapshots
+        run: |
+          git clone -b develop --single-branch --depth=1 https://github.com/jdemetra/jd3-main.git jd3-main
+          mvn -B install -Pfast-build -DskipTests -T1C -f ./jd3-main/pom.xml
+
+      - name: Build jd3-benchmarking snapshots
+        run: |
+          git clone -b develop --single-branch --depth=1 https://github.com/jdemetra/jd3-benchmarking.git jd3-main
+          mvn -B install -Pfast-build -DskipTests -T1C -f ./jd3-benchmarking/pom.xml
+
+      - name: Build jd3-incubator snapshots
+        run: |
+          git clone -b develop --single-branch --depth=1 https://github.com/jdemetra/jd3-incubator.git jd3-main
+          mvn -B install -Pfast-build -DskipTests -T1C -f ./jd3-incubator/pom.xml
+
+      - name: Build and (headless) test with Maven
+        uses: GabrielBB/xvfb-action@v1
+        with:
+          run: mvn -U -B -ntp package
