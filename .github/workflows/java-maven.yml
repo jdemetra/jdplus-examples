@@ -35,12 +35,12 @@ jobs:
 
       - name: Build jd3-benchmarking snapshots
         run: |
-          git clone -b develop --single-branch --depth=1 https://github.com/jdemetra/jd3-benchmarking.git jd3-main
+          git clone -b develop --single-branch --depth=1 https://github.com/jdemetra/jd3-benchmarking.git jd3-benchmarking
           mvn -B install -Pfast-build -DskipTests -T1C -f ./jd3-benchmarking/pom.xml
 
       - name: Build jd3-incubator snapshots
         run: |
-          git clone -b develop --single-branch --depth=1 https://github.com/jdemetra/jd3-incubator.git jd3-main
+          git clone -b develop --single-branch --depth=1 https://github.com/jdemetra/jd3-incubator.git jd3-incubator
           mvn -B install -Pfast-build -DskipTests -T1C -f ./jd3-incubator/pom.xml
 
       - name: Build and (headless) test with Maven
