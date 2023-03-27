@@ -4,11 +4,11 @@
 
     <parent>
         <groupId>eu.europa.ec.joinup.sat</groupId>
-        <artifactId>jd3-examples-base-parent</artifactId>
+        <artifactId>jdplus-examples-base-parent</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>jd3-examples-base-core</artifactId>
+    <artifactId>jdplus-examples-base-core</artifactId>
     <packaging>jar</packaging>
 
     <name>${project.artifactId}</name>
@@ -19,40 +19,40 @@
         <!-- modules v3 > -->
         <dependency>
             <groupId>eu.europa.ec.joinup.sat</groupId>
-            <artifactId>jd3-toolkit-base-api</artifactId>
-            <version>${jd3-main.version}</version>
+            <artifactId>jdplus-toolkit-base-api</artifactId>
+            <version>${jdplus-main.version}</version>
         </dependency>
         <dependency>
             <groupId>eu.europa.ec.joinup.sat</groupId>
-            <artifactId>jd3-toolkit-base-api</artifactId>
-            <version>${jd3-main.version}</version>
+            <artifactId>jdplus-toolkit-base-api</artifactId>
+            <version>${jdplus-main.version}</version>
             <classifier>tests</classifier>
             <type>test-jar</type>
         </dependency>
         <dependency>
             <groupId>eu.europa.ec.joinup.sat</groupId>
-            <artifactId>jd3-toolkit-base-core</artifactId>
-            <version>${jd3-main.version}</version>
+            <artifactId>jdplus-toolkit-base-core</artifactId>
+            <version>${jdplus-main.version}</version>
         </dependency>
         <dependency>
             <groupId>eu.europa.ec.joinup.sat</groupId>
-            <artifactId>jd3-sa-base-core</artifactId>
-            <version>${jd3-main.version}</version>
+            <artifactId>jdplus-sa-base-core</artifactId>
+            <version>${jdplus-main.version}</version>
         </dependency>
         <dependency>
             <groupId>eu.europa.ec.joinup.sat</groupId>
-            <artifactId>jd3-tramoseats-base-core</artifactId>
-            <version>${jd3-main.version}</version>
+            <artifactId>jdplus-tramoseats-base-core</artifactId>
+            <version>${jdplus-main.version}</version>
         </dependency>
         <dependency>
             <groupId>eu.europa.ec.joinup.sat</groupId>
-            <artifactId>jd3-benchmarking-base-core</artifactId>
-            <version>${jd3-benchmarking.version}</version>            
+            <artifactId>jdplus-benchmarking-base-core</artifactId>
+            <version>${jdplus-benchmarking.version}</version>
         </dependency>
         <dependency>
             <groupId>eu.europa.ec.joinup.sat</groupId>
-            <artifactId>jd3-sts-base-core</artifactId>
-            <version>${jd3-sts.version}</version>            
+            <artifactId>jdplus-sts-base-core</artifactId>
+            <version>${jdplus-sts.version}</version>
         </dependency>
         <!-- < modules v2 -->
         <dependency>

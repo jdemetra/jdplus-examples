@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>eu.europa.ec.joinup.sat</groupId>
-    <artifactId>jd3-examples</artifactId>
+    <artifactId>jdplus-examples</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
@@ -58,16 +58,16 @@
 
         <!-- dependencies -->
         <jd2.version>2.2.4</jd2.version>
-        <jd3-main.version>3.0.0-SNAPSHOT</jd3-main.version>
-        <jd3-benchmarking.version>1.0.0-SNAPSHOT</jd3-benchmarking.version>
-        <jd3-sts.version>1.0.0-SNAPSHOT</jd3-sts.version>
+        <jdplus-main.version>3.0.0-SNAPSHOT</jdplus-main.version>
+        <jdplus-benchmarking.version>1.0.0-SNAPSHOT</jdplus-benchmarking.version>
+        <jdplus-sts.version>1.0.0-SNAPSHOT</jdplus-sts.version>
         <protobuf.version>3.21.12</protobuf.version>
     </properties>
 
     <modules>
-        <module>jd3-examples-base</module>
-        <module>jd3-examples-desktop</module>
-        <module>jd3-examples-cli</module>
+        <module>jdplus-examples-base</module>
+        <module>jdplus-examples-desktop</module>
+        <module>jdplus-examples-cli</module>
     </modules>
 
     <dependencies>
@@ -293,7 +293,7 @@
                                 <requireProperty>
                                     <property>project.artifactId</property>
                                     <message>Project artifactId must follow JD3 pattern</message>
-                                    <regex>^(jd3)-(\w+)(?:-(base|cli|desktop)(?:-(\w+))?)?$</regex>
+                                    <regex>^(jdplus)-(\w+)(?:-(base|cli|desktop)(?:-(\w+))?)?$</regex>
                                 </requireProperty>
                                 <requireReleaseDeps>
                                     <onlyWhenRelease>true</onlyWhenRelease>
