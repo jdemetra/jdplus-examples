@@ -14,17 +14,17 @@
  * See the Licence for the specific language governing permissions and 
  * limitations under the Licence.
  */
-package demetra.examples;
+package jdplus.examples.base.core;
 
 import tck.demetra.data.Data;
-import demetra.information.InformationExtractor;
-import demetra.information.InformationMapping;
-import demetra.timeseries.TsData;
-import demetra.timeseries.TsPeriod;
-import demetra.tramoseats.TramoSeatsSpec;
-import jdplus.seats.SeatsResults;
-import jdplus.tramoseats.TramoSeatsKernel;
-import jdplus.tramoseats.TramoSeatsResults;
+import jdplus.toolkit.base.api.information.InformationExtractor;
+import jdplus.toolkit.base.api.information.InformationMapping;
+import jdplus.toolkit.base.api.timeseries.TsData;
+import jdplus.toolkit.base.api.timeseries.TsPeriod;
+import jdplus.tramoseats.base.api.tramoseats.TramoSeatsSpec;
+import jdplus.tramoseats.base.core.seats.SeatsResults;
+import jdplus.tramoseats.base.core.tramoseats.TramoSeatsKernel;
+import jdplus.tramoseats.base.core.tramoseats.TramoSeatsResults;
 import nbbrd.service.ServiceProvider;
 
 /**

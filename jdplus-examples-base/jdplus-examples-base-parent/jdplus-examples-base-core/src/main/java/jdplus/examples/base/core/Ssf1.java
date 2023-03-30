@@ -14,19 +14,19 @@
  * See the Licence for the specific language governing permissions and 
  * limitations under the Licence.
  */
-package demetra.examples;
+package jdplus.examples.base.core;
 
 import tck.demetra.data.Data;
-import jdplus.data.DataBlock;
-import jdplus.data.DataBlockStorage;
-import jdplus.math.matrices.FastMatrix;
-import jdplus.ssf.StateComponent;
-import jdplus.ssf.composite.CompositeSsf;
-import jdplus.ssf.dk.DkToolkit;
-import jdplus.ssf.likelihood.DiffuseLikelihood;
-import jdplus.ssf.sts.LocalLinearTrend;
-import jdplus.ssf.sts.Noise;
-import jdplus.ssf.univariate.SsfData;
+import jdplus.toolkit.base.core.data.DataBlock;
+import jdplus.toolkit.base.core.data.DataBlockStorage;
+import jdplus.toolkit.base.core.math.matrices.FastMatrix;
+import jdplus.toolkit.base.core.ssf.StateComponent;
+import jdplus.toolkit.base.core.ssf.composite.CompositeSsf;
+import jdplus.toolkit.base.core.ssf.dk.DkToolkit;
+import jdplus.toolkit.base.core.ssf.likelihood.DiffuseLikelihood;
+import jdplus.toolkit.base.core.ssf.sts.LocalLinearTrend;
+import jdplus.toolkit.base.core.ssf.sts.Noise;
+import jdplus.toolkit.base.core.ssf.univariate.SsfData;
 
 /**
  * Local linear trend + Noise

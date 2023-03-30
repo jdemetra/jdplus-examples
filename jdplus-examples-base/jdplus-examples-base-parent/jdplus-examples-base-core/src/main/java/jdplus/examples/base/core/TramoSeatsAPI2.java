@@ -14,7 +14,7 @@
  * See the Licence for the specific language governing permissions and 
  * limitations under the Licence.
  */
-package demetra.examples;
+package jdplus.examples.base.core;
 
 import tck.demetra.data.Data;
 import ec.satoolkit.seats.SeatsResults;

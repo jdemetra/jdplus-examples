@@ -14,28 +14,28 @@
  * See the Licence for the specific language governing permissions and 
  * limitations under the Licence.
  */
-package demetra.examples;
+package jdplus.examples.base.core;
 
 import tck.demetra.data.Data;
-import demetra.math.matrices.Matrix;
-import demetra.timeseries.StaticTsDataSupplier;
-import demetra.timeseries.TsData;
-import demetra.timeseries.TsDomain;
-import demetra.timeseries.TsPeriod;
-import demetra.timeseries.calendars.DayClustering;
-import demetra.timeseries.calendars.GenericTradingDays;
-import demetra.timeseries.regression.GenericTradingDaysVariable;
-import demetra.timeseries.regression.ITradingDaysVariable;
-import demetra.timeseries.regression.ModellingContext;
-import demetra.timeseries.regression.TsDataSuppliers;
-import demetra.tramo.CalendarSpec;
-import demetra.tramo.RegressionSpec;
-import demetra.tramo.RegressionTestType;
-import demetra.tramo.TradingDaysSpec;
-import demetra.tramoseats.TramoSeatsSpec;
-import jdplus.modelling.regression.Regression;
-import jdplus.tramoseats.TramoSeatsKernel;
-import jdplus.tramoseats.TramoSeatsResults;
+import jdplus.toolkit.base.api.math.matrices.Matrix;
+import jdplus.toolkit.base.api.timeseries.StaticTsDataSupplier;
+import jdplus.toolkit.base.api.timeseries.TsData;
+import jdplus.toolkit.base.api.timeseries.TsDomain;
+import jdplus.toolkit.base.api.timeseries.TsPeriod;
+import jdplus.toolkit.base.api.timeseries.calendars.DayClustering;
+import jdplus.toolkit.base.api.timeseries.calendars.GenericTradingDays;
+import jdplus.toolkit.base.api.timeseries.regression.GenericTradingDaysVariable;
+import jdplus.toolkit.base.api.timeseries.regression.ITradingDaysVariable;
+import jdplus.toolkit.base.api.timeseries.regression.ModellingContext;
+import jdplus.toolkit.base.api.timeseries.regression.TsDataSuppliers;
+import jdplus.tramoseats.base.api.tramo.CalendarSpec;
+import jdplus.tramoseats.base.api.tramo.RegressionSpec;
+import jdplus.tramoseats.base.api.tramo.RegressionTestType;
+import jdplus.tramoseats.base.api.tramo.TradingDaysSpec;
+import jdplus.tramoseats.base.api.tramoseats.TramoSeatsSpec;
+import jdplus.toolkit.base.core.modelling.regression.Regression;
+import jdplus.tramoseats.base.core.tramoseats.TramoSeatsKernel;
+import jdplus.tramoseats.base.core.tramoseats.TramoSeatsResults;
 
 /**
  * User-defined calendar variables.

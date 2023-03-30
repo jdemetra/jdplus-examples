@@ -14,19 +14,19 @@
  * See the Licence for the specific language governing permissions and 
  * limitations under the Licence.
  */
-package demetra.examples;
+package jdplus.examples.base.core;
 
 import tck.demetra.data.Data;
-import jdplus.arima.ArimaModel;
-import jdplus.math.linearfilters.BackFilter;
-import jdplus.math.polynomials.Polynomial;
-import jdplus.ssf.StateComponent;
-import jdplus.ssf.arima.SsfArima;
-import jdplus.ssf.composite.CompositeSsf;
-import jdplus.ssf.dk.DkToolkit;
-import jdplus.ssf.sts.Noise;
-import jdplus.ssf.univariate.DefaultSmoothingResults;
-import jdplus.ssf.univariate.SsfData;
+import jdplus.toolkit.base.core.arima.ArimaModel;
+import jdplus.toolkit.base.core.math.linearfilters.BackFilter;
+import jdplus.toolkit.base.core.math.polynomials.Polynomial;
+import jdplus.toolkit.base.core.ssf.StateComponent;
+import jdplus.toolkit.base.core.ssf.arima.SsfArima;
+import jdplus.toolkit.base.core.ssf.composite.CompositeSsf;
+import jdplus.toolkit.base.core.ssf.dk.DkToolkit;
+import jdplus.toolkit.base.core.ssf.sts.Noise;
+import jdplus.toolkit.base.core.ssf.univariate.DefaultSmoothingResults;
+import jdplus.toolkit.base.core.ssf.univariate.SsfData;
 
 /**
  *

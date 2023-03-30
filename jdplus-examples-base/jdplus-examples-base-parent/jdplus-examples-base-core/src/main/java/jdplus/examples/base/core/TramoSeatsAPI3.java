@@ -14,24 +14,24 @@
  * See the Licence for the specific language governing permissions and 
  * limitations under the Licence.
  */
-package demetra.examples;
+package jdplus.examples.base.core;
 
 import com.google.common.primitives.Doubles;
 import tck.demetra.data.Data;
-import demetra.information.Explorable;
-import demetra.sa.EstimationPolicyType;
-import demetra.sa.SaEstimation;
-import demetra.sa.SaItem;
-import demetra.timeseries.Ts;
-import demetra.timeseries.TsData;
-import demetra.timeseries.TsDataTable;
-import demetra.timeseries.TsPeriod;
-import demetra.tramoseats.TramoSeatsSpec;
+import jdplus.toolkit.base.api.information.Explorable;
+import jdplus.sa.base.api.EstimationPolicyType;
+import jdplus.sa.base.api.SaEstimation;
+import jdplus.sa.base.api.SaItem;
+import jdplus.toolkit.base.api.timeseries.Ts;
+import jdplus.toolkit.base.api.timeseries.TsData;
+import jdplus.toolkit.base.api.timeseries.TsDataTable;
+import jdplus.toolkit.base.api.timeseries.TsPeriod;
+import jdplus.tramoseats.base.api.tramoseats.TramoSeatsSpec;
 import java.util.Arrays;
-import jdplus.sarima.SarimaModel;
-import jdplus.tramoseats.TramoSeatsFactory;
-import jdplus.tramoseats.TramoSeatsKernel;
-import jdplus.tramoseats.TramoSeatsResults;
+import jdplus.toolkit.base.core.sarima.SarimaModel;
+import jdplus.tramoseats.base.core.tramoseats.TramoSeatsFactory;
+import jdplus.tramoseats.base.core.tramoseats.TramoSeatsKernel;
+import jdplus.tramoseats.base.core.tramoseats.TramoSeatsResults;
 
 /**
  *

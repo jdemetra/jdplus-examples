@@ -14,10 +14,7 @@
  * See the Licence for the specific language governing permissions and 
  * limitations under the Licence.
  */
-package demetra.examples;
-
-import demetra.data.Doubles;
-import demetra.timeseries.TsData;
+package jdplus.examples.base.core;
 
 /**
  *

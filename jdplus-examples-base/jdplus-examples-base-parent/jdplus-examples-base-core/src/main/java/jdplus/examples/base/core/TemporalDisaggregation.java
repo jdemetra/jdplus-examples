@@ -14,16 +14,15 @@
  * See the Licence for the specific language governing permissions and 
  * limitations under the Licence.
  */
-package demetra.examples;
+package jdplus.examples.base.core;
 
-import demetra.data.AggregationType;
+import jdplus.toolkit.base.api.data.AggregationType;
 import tck.demetra.data.Data;
-import demetra.ssf.SsfInitialization;
-import demetra.tempdisagg.univariate.TemporalDisaggregationSpec;
-import demetra.timeseries.TsData;
-import demetra.timeseries.TsPeriod;
-import jdplus.tempdisagg.univariate.TemporalDisaggregationProcessor;
-import jdplus.tempdisagg.univariate.TemporalDisaggregationResults;
+import jdplus.benchmarking.base.api.univariate.TemporalDisaggregationSpec;
+import jdplus.toolkit.base.api.timeseries.TsData;
+import jdplus.toolkit.base.api.timeseries.TsPeriod;
+import jdplus.benchmarking.base.core.univariate.TemporalDisaggregationProcessor;
+import jdplus.benchmarking.base.core.univariate.TemporalDisaggregationResults;
 
 /**
  *

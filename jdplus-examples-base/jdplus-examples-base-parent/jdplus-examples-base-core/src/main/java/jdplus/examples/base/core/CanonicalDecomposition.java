@@ -14,16 +14,16 @@
  * See the Licence for the specific language governing permissions and 
  * limitations under the Licence.
  */
-package demetra.examples;
+package jdplus.examples.base.core;
 
-import demetra.arima.SarimaOrders;
-import demetra.data.DoubleSeq;
+import jdplus.toolkit.base.api.arima.SarimaOrders;
+import jdplus.toolkit.base.api.data.DoubleSeq;
 import java.util.function.DoubleUnaryOperator;
-import jdplus.sarima.SarimaModel;
-import jdplus.ucarima.ModelDecomposer;
-import jdplus.ucarima.SeasonalSelector;
-import jdplus.ucarima.TrendCycleSelector;
-import jdplus.ucarima.UcarimaModel;
+import jdplus.toolkit.base.core.sarima.SarimaModel;
+import jdplus.toolkit.base.core.ucarima.ModelDecomposer;
+import jdplus.toolkit.base.core.ucarima.SeasonalSelector;
+import jdplus.toolkit.base.core.ucarima.TrendCycleSelector;
+import jdplus.toolkit.base.core.ucarima.UcarimaModel;
 
 /**
  *

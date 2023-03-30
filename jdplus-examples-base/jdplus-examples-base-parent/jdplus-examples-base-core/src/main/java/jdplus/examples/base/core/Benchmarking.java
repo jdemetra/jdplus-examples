@@ -14,17 +14,17 @@
  * See the Licence for the specific language governing permissions and 
  * limitations under the Licence.
  */
-package demetra.examples;
+package jdplus.examples.base.core;
 
-import demetra.benchmarking.univariate.Cholette;
-import demetra.benchmarking.univariate.CholetteSpec;
-import demetra.benchmarking.univariate.Denton;
-import demetra.benchmarking.univariate.DentonSpec;
-import demetra.data.AggregationType;
+import jdplus.benchmarking.base.api.benchmarking.univariate.Cholette;
+import jdplus.benchmarking.base.api.benchmarking.univariate.CholetteSpec;
+import jdplus.benchmarking.base.api.benchmarking.univariate.Denton;
+import jdplus.benchmarking.base.api.benchmarking.univariate.DentonSpec;
+import jdplus.toolkit.base.api.data.AggregationType;
 import tck.demetra.data.Data;
-import demetra.timeseries.TsData;
-import demetra.timeseries.TsDataTable;
-import demetra.timeseries.TsUnit;
+import jdplus.toolkit.base.api.timeseries.TsData;
+import jdplus.toolkit.base.api.timeseries.TsDataTable;
+import jdplus.toolkit.base.api.timeseries.TsUnit;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
