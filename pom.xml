@@ -58,7 +58,7 @@
 
         <!-- dependencies -->
         <jd2.version>2.2.4</jd2.version>
-        <jdplus-main.version>3.0.1-SNAPSHOT</jdplus-main.version>
+        <jdplus-main.version>3.0.2-SNAPSHOT</jdplus-main.version>
         <jdplus-benchmarking.version>1.0.0-SNAPSHOT</jdplus-benchmarking.version>
         <jdplus-sts.version>1.0.0-SNAPSHOT</jdplus-sts.version>
         <protobuf.version>3.21.12</protobuf.version>
