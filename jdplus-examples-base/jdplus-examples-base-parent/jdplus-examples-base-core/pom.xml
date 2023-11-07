@@ -52,12 +52,12 @@
         <dependency>
             <groupId>eu.europa.ec.joinup.sat</groupId>
             <artifactId>jdplus-sts-base-core</artifactId>
-            <version>${jdplus-sts.version}</version>
+            <version>${jdplus-incubator.version}</version>
         </dependency>
         <dependency>
             <groupId>eu.europa.ec.joinup.sat</groupId>
             <artifactId>jdplus-highfreq-base-core</artifactId>
-            <version>${jdplus-highfreq.version}</version>
+            <version>${jdplus-incubator.version}</version>
         </dependency>
         <!-- < modules v2 -->
         <dependency>
