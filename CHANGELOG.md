@@ -7,4 +7,4 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
-[Unreleased]: https://github.com/jdemetra/jd3-examples/compare/...HEAD
+[Unreleased]: https://github.com/jdemetra/jd3-examples/compare/17885c8455f19914df9c5945522290ab12e1b140...HEAD
