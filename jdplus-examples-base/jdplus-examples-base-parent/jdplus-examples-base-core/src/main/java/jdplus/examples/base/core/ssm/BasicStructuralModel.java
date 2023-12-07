@@ -4,9 +4,8 @@
  */
 package jdplus.examples.base.core.ssm;
 
-import jdplus.sts.base.api.SeasonalModel;
-import jdplus.sts.base.core.SeasonalComponent;
 import jdplus.toolkit.base.api.data.DoubleSeq;
+import jdplus.toolkit.base.api.ssf.sts.SeasonalModel;
 import jdplus.toolkit.base.core.data.DataBlock;
 import jdplus.toolkit.base.core.data.DataBlockStorage;
 import jdplus.toolkit.base.core.math.functions.IParametersDomain;
@@ -20,6 +19,7 @@ import jdplus.toolkit.base.core.ssf.dk.DkToolkit;
 import jdplus.toolkit.base.core.ssf.likelihood.DiffuseLikelihood;
 import jdplus.toolkit.base.core.ssf.sts.LocalLinearTrend;
 import jdplus.toolkit.base.core.ssf.sts.Noise;
+import jdplus.toolkit.base.core.ssf.sts.SeasonalComponent;
 import jdplus.toolkit.base.core.ssf.univariate.Ssf;
 import jdplus.toolkit.base.core.ssf.univariate.SsfData;
 import tck.demetra.data.Data;

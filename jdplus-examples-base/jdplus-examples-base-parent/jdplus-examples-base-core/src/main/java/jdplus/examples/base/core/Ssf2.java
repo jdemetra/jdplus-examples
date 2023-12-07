@@ -16,8 +16,7 @@
  */
 package jdplus.examples.base.core;
 
-import tck.demetra.data.Data;
-import jdplus.sts.base.api.SeasonalModel;
+import jdplus.toolkit.base.api.ssf.sts.SeasonalModel;
 import jdplus.toolkit.base.core.data.DataBlock;
 import jdplus.toolkit.base.core.math.matrices.FastMatrix;
 import jdplus.toolkit.base.core.math.matrices.QuadraticForm;
@@ -28,9 +27,10 @@ import jdplus.toolkit.base.core.ssf.dk.DkToolkit;
 import jdplus.toolkit.base.core.ssf.likelihood.DiffuseLikelihood;
 import jdplus.toolkit.base.core.ssf.sts.LocalLinearTrend;
 import jdplus.toolkit.base.core.ssf.sts.Noise;
+import jdplus.toolkit.base.core.ssf.sts.SeasonalComponent;
 import jdplus.toolkit.base.core.ssf.univariate.DefaultSmoothingResults;
 import jdplus.toolkit.base.core.ssf.univariate.SsfData;
-import jdplus.sts.base.core.SeasonalComponent;
+import tck.demetra.data.Data;
 
 /**
  * Local linear trend + Seasonal + Noise
