@@ -226,6 +226,11 @@
                     <artifactId>nexus-staging-maven-plugin</artifactId>
                     <version>1.6.13</version>
                 </plugin>
+                <plugin>
+                    <groupId>org.jreleaser</groupId>
+                    <artifactId>jreleaser-maven-plugin</artifactId>
+                    <version>1.10.0</version>
+                </plugin>
             </plugins>
         </pluginManagement>
         <plugins>
