@@ -59,7 +59,7 @@
 
         <!-- dependencies -->
         <jd2.version>2.2.5</jd2.version>
-        <jdplus-main.version>3.2.2</jdplus-main.version>
+        <jdplus-main.version>3.2.4</jdplus-main.version>
         <jdplus-benchmarking.version>1.2.1</jdplus-benchmarking.version>
         <jdplus-incubator.version>2.1.0</jdplus-incubator.version>
         <protobuf.version>3.21.12</protobuf.version>
