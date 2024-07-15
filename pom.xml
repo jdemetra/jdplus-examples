@@ -58,7 +58,7 @@
         <assertj-core.version>3.26.3</assertj-core.version>
 
         <!-- dependencies -->
-        <jd2.version>2.2.4</jd2.version>
+        <jd2.version>2.2.5</jd2.version>
         <jdplus-main.version>3.2.2</jdplus-main.version>
         <jdplus-benchmarking.version>1.2.1</jdplus-benchmarking.version>
         <jdplus-incubator.version>2.1.0</jdplus-incubator.version>
