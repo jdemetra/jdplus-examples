@@ -7,7 +7,7 @@ import jdplus.toolkit.base.api.util.LinearId;
 import jdplus.toolkit.desktop.plugin.ui.processing.IProcDocumentItemFactory;
 import nbbrd.design.DirectImpl;
 import nbbrd.service.ServiceProvider;
-import org.checkerframework.checker.nullness.qual.NonNull;
+import lombok.NonNull;
 
 import javax.swing.*;
 

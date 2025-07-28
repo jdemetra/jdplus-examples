@@ -5,7 +5,7 @@ import jdplus.toolkit.desktop.plugin.TsActionOpenSpi;
 import jdplus.toolkit.desktop.plugin.notification.MessageUtil;
 import nbbrd.design.DirectImpl;
 import nbbrd.service.ServiceProvider;
-import org.checkerframework.checker.nullness.qual.NonNull;
+import lombok.NonNull;
 
 @DirectImpl
 @ServiceProvider
