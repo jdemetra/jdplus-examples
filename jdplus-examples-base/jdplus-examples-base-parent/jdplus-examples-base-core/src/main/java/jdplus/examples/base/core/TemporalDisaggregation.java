@@ -16,13 +16,15 @@
  */
 package jdplus.examples.base.core;
 
-import jdplus.toolkit.base.api.data.AggregationType;
-import tck.demetra.data.Data;
+import jdplus.benchmarking.base.api.univariate.AlgorithmSpec;
+import jdplus.benchmarking.base.api.univariate.ModelSpec;
 import jdplus.benchmarking.base.api.univariate.TemporalDisaggregationSpec;
-import jdplus.toolkit.base.api.timeseries.TsData;
-import jdplus.toolkit.base.api.timeseries.TsPeriod;
+import jdplus.benchmarking.base.api.univariate.TsEstimationSpec;
 import jdplus.benchmarking.base.core.univariate.TemporalDisaggregationProcessor;
 import jdplus.benchmarking.base.core.univariate.TemporalDisaggregationResults;
+import jdplus.toolkit.base.api.timeseries.TsData;
+import jdplus.toolkit.base.api.timeseries.TsPeriod;
+import tck.demetra.data.Data;
 
 /**
  *
@@ -36,9 +38,11 @@ public class TemporalDisaggregation {
         TsData y = TsData.ofInternal(TsPeriod.yearly(1978),  Data.PCRA);
         TsData q = TsData.ofInternal(TsPeriod.quarterly(1977, 1),  Data.IND_PCR);
         TemporalDisaggregationSpec spec = TemporalDisaggregationSpec.builder()
-                .aggregationType(AggregationType.Sum)
-                .residualsModel(TemporalDisaggregationSpec.Model.Ar1)
-                .constant(true)
+                .average(false)
+                .defaultPeriod(TemporalDisaggregationSpec.DEF_PERIOD)
+                .modelSpec(ModelSpec.CHOWLIN)
+                .algorithmSpec(AlgorithmSpec.DEFAULT)
+                .estimationSpec(TsEstimationSpec.DEFAULT)
                 .build();
         TemporalDisaggregationResults rslt = TemporalDisaggregationProcessor.process(y, new TsData[]{q}, spec);
         System.out.println(rslt.getLikelihood());
