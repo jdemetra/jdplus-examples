@@ -16,7 +16,7 @@
 
     <properties>
         <!-- dependencies -->
-        <netbeans.version>RELEASE290</netbeans.version>
+        <netbeans.version>RELEASE300</netbeans.version>
     </properties>
 
     <modules>
