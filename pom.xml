@@ -64,6 +64,7 @@
         <jdplus-benchmarking.version>2.1.0</jdplus-benchmarking.version>
         <jdplus-incubator.version>2.4.1</jdplus-incubator.version>
         <protobuf.version>3.21.12</protobuf.version>
+        <heylogs.version>0.19.1</heylogs.version>
     </properties>
 
     <modules>
@@ -182,7 +183,7 @@
                 <plugin>
                     <groupId>com.github.nbbrd.heylogs</groupId>
                     <artifactId>heylogs-maven-plugin</artifactId>
-                    <version>0.19.1</version>
+                    <version>${heylogs.version}</version>
                 </plugin>
                 <plugin>
                     <groupId>io.github.ascopes</groupId>
@@ -302,6 +303,11 @@
                         <artifactId>pomchecker-enforcer-rules</artifactId>
                         <version>1.15.0</version>
                     </dependency>
+                    <dependency>
+                        <groupId>com.github.nbbrd.heylogs</groupId>
+                        <artifactId>heylogs-enforcer-rules</artifactId>
+                        <version>${heylogs.version}</version>
+                    </dependency>
                 </dependencies>
                 <executions>
                     <execution>
@@ -346,6 +352,9 @@
                                     <release>false</release>
                                     <strict>false</strict>
                                 </checkMavenCentral>
+                                <!-- heylogs-enforcer-rules -->
+                                <checkChangelog/>
+                                <formatChangelog/>
                             </rules>
                         </configuration>
                     </execution>
@@ -415,18 +424,6 @@
                             <goal>check</goal>
                             <goal>testCheck</goal>
                         </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>com.github.nbbrd.heylogs</groupId>
-                <artifactId>heylogs-maven-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>check</goal>
-                        </goals>
-                        <inherited>false</inherited>
                     </execution>
                 </executions>
             </plugin>
