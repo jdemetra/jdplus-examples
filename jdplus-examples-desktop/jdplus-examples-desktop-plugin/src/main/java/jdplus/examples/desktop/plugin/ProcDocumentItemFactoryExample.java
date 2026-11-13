@@ -1,15 +1,13 @@
 package jdplus.examples.desktop.plugin;
 
-
+import javax.swing.*;
 import jdplus.toolkit.base.api.processing.ProcDocument;
 import jdplus.toolkit.base.api.util.Id;
 import jdplus.toolkit.base.api.util.LinearId;
 import jdplus.toolkit.desktop.plugin.ui.processing.IProcDocumentItemFactory;
+import lombok.NonNull;
 import nbbrd.design.DirectImpl;
 import nbbrd.service.ServiceProvider;
-import lombok.NonNull;
-
-import javax.swing.*;
 
 @DirectImpl
 @ServiceProvider

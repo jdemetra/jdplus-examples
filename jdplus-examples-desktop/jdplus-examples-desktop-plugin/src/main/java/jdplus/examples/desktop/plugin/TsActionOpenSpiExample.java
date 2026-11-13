@@ -3,9 +3,9 @@ package jdplus.examples.desktop.plugin;
 import jdplus.toolkit.base.api.timeseries.Ts;
 import jdplus.toolkit.desktop.plugin.TsActionOpenSpi;
 import jdplus.toolkit.desktop.plugin.notification.MessageUtil;
+import lombok.NonNull;
 import nbbrd.design.DirectImpl;
 import nbbrd.service.ServiceProvider;
-import lombok.NonNull;
 
 @DirectImpl
 @ServiceProvider
