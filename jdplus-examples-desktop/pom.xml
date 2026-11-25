@@ -19,7 +19,7 @@
 
     <properties>
         <!-- dependencies -->
-        <netbeans.version>RELEASE310</netbeans.version>
+        <netbeans.version>RELEASE320</netbeans.version>
     </properties>
 
     <build>
